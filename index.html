@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Tasks</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #1a1a2e; color: #e0e0e0; }
+    h1 { font-size: 1.4rem; margin-bottom: 4px; color: #fff; }
+    .date { color: #888; font-size: 0.9rem; margin-bottom: 20px; }
+    .updated { color: #666; font-size: 0.75rem; margin-bottom: 24px; }
+    h2 { font-size: 1.1rem; margin: 20px 0 8px; color: #8ab4f8; border-bottom: 1px solid #333; padding-bottom: 4px; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 8px 0; border-bottom: 1px solid #2a2a3e; font-size: 0.95rem; line-height: 1.4; }
+    li:last-child { border-bottom: none; }
+    .task-title { font-weight: 600; }
+    .task-detail { color: #aaa; font-size: 0.85rem; margin-top: 2px; }
+    .meeting { background: #2a2a3e; padding: 8px 12px; border-radius: 6px; margin-bottom: 6px; }
+    .meeting-time { color: #f0a050; font-weight: 600; font-size: 0.85rem; }
+    .prep { color: #aaa; font-size: 0.85rem; margin-top: 2px; }
+    .no-meetings { color: #666; font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Daily Tasks</h1>
+  <div class="date">Wednesday, April 1, 2026</div>
+  <div class="updated">Last updated: 2026-04-01</div>
+
+  <h2>Meetings</h2>
+  <p class="no-meetings">No meetings today. Heads-down day.</p>
+
+  <h2>Today's Focus</h2>
+  <ul>
+    <li>
+      <div class="task-title">Bug backlog review</div>
+      <div class="task-detail">Pull the full bug list. Categorize by severity, age, feature area, pod ownership. Need this done before tomorrow's 10am Bug Triage.</div>
+    </li>
+    <li>
+      <div class="task-title">Define quality metrics</div>
+      <div class="task-detail">Identify 5-7 metrics. For each: where does the data live and can you pull it today? Factor in fix-forward model — focus on request source tracking as a priority data gap.</div>
+    </li>
+    <li>
+      <div class="task-title">Set up bi-weekly epic review</div>
+      <div class="task-detail">Block recurring time on your calendar. Define lightweight review checklist (coverage, data handling, accessibility, performance, compliance).</div>
+    </li>
+  </ul>
+
+  <h2>Prep for Tomorrow</h2>
+  <ul>
+    <li>
+      <div class="task-title">Thu Apr 2 — QA/Product Bug Triage (10am)</div>
+      <div class="task-detail">Come with prioritized backlog and a recommendation on what goes into next sprint. Consider introducing request source field requirement.</div>
+    </li>
+  </ul>
+</body>
+</html>
