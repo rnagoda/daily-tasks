@@ -32,50 +32,71 @@
     .coming-soon li { padding: 6px 0; border-bottom: 1px solid #2a2a3e; font-size: 0.85rem; color: #aaa; }
     .coming-soon .cs-date { color: #f0a050; font-weight: 600; font-size: 0.8rem; min-width: 90px; display: inline-block; }
     .coming-soon .cs-item { color: #ccc; }
+    .carry-tag { display: inline-block; background: #3a2a2e; color: #f08080; font-size: 0.7rem; font-weight: 600; padding: 2px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle; }
   </style>
 </head>
 <body>
   <h1>Daily Tasks</h1>
-  <div class="date">Monday, April 6, 2026</div>
-  <div class="updated">Last updated: 2026-04-06</div>
+  <div class="date">Monday, April 13, 2026 — Sprint 145 Begins</div>
+  <div class="updated">Last updated: 2026-04-10</div>
 
   <div class="goal-focus">
     <div class="goal-focus-title">Today's Goal Focus: Goal 3 — Shift from Execution to Strategy</div>
-    <div class="goal-focus-snippet">Monday sets the tone. The project review, the N+1, the backfill — all of it is about getting above the noise and seeing the quarter clearly. The work you do today is what turns reactive firefighting into a deliberate quality strategy.</div>
+    <div class="goal-focus-snippet">New sprint, new contractor, same throughline: get ahead of the work instead of reacting to it. The JSM follow-ups from the fire drill, the project review, the N+1 — all of it is about building systems that run without you having to intervene every time.</div>
   </div>
-  <div class="goals-active">Goals in play today: 1, 2, 3, 6</div>
+  <div class="goals-active">Goals in play today: 1, 3, 6</div>
 
   <h2>Meetings</h2>
   <div class="meeting">
-    <div class="meeting-time">10:30am — Mid-Sprint Standup (every other Monday)</div>
-    <div class="prep">Quick check-in with engineering. ~15-20 mins.</div>
+    <div class="meeting-time">Weekly Project Review (first thing)</div>
+    <div class="prep">Sprint 145 kickoff — review tracker, flag new projects (MFA, Braze, Minors, Data Deletion, etc.), align on priorities.</div>
   </div>
   <div class="meeting">
     <div class="meeting-time">N+1 Meeting (weekly)</div>
-    <div class="prep">First occurrence. Come with quality perspective on upcoming sprint priorities.</div>
+    <div class="prep">Bring quality lens to Sprint 145 priorities. Flag compliance-sensitive projects (Minors, Data Deletion, Anthem).</div>
   </div>
 
   <h2>Today's Focus</h2>
   <ul>
     <li>
-      <div class="task-title">Weekly project review (after standup) <span class="goal-tag">Goal 1</span> <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Review project tracker with mentor. Flag status changes, risks, fill in 2-3 pending PI tickets.</div>
+      <div class="task-title">VPAT contractor starts — be available <span class="goal-tag">Goal 1</span></div>
+      <div class="task-detail">Contractor begins web and iOS accessibility work today. Scope TBD from Apr 2 meeting. Be reachable for questions and coordination.</div>
     </li>
     <li>
-      <div class="task-title">Q1 accomplishments backfill <span class="goal-tag">Goal 5</span></div>
-      <div class="task-detail">Review Q1 work and document in accomplishments.md. Don't lose credit for three months of work.</div>
+      <div class="task-title">Turn off JSM alert for P1 recovery messages <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Fire drill follow-up. Recovery message alerts in JSM are noisy — disable them.</div>
     </li>
     <li>
-      <div class="task-title">Write P1 alert punchlist <span class="goal-tag">Goal 1</span> <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Blocker cleared — Slack→JSM workflow is tested and ready. Punchlist must be done before Thursday's fire drill.</div>
+      <div class="task-title">P1 incidents: investigate channel inclusion in ticket <span class="goal-tag">Goal 3</span> <span class="goal-tag">Goal 6</span></div>
+      <div class="task-detail">Evaluate whether the incident Slack channel should be included in the JSM ticket, or whether the separate channel approach should be dropped entirely.</div>
+    </li>
+    <li>
+      <div class="task-title">Investigate new JSM features <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Review what's new in JSM that could streamline QA and incident workflows.</div>
+    </li>
+    <li>
+      <div class="task-title">Q1 accomplishments backfill <span class="carry-tag">Carrying 3wks</span></div>
+      <div class="task-detail">Review Q1 work and document in accomplishments.md. Three weeks on the list — give this a hard slot today.</div>
+    </li>
+  </ul>
+
+  <h2>Also In Flight This Sprint</h2>
+  <ul>
+    <li>
+      <div class="task-title">#product-support Slack workflow <span class="goal-tag">Goal 6</span> <span class="goal-tag">Goal 2</span></div>
+      <div class="task-detail">Meeting with Care Team manager this week to continue. Keep momentum.</div>
+    </li>
+    <li>
+      <div class="task-title">P1 alert punchlist <span class="goal-tag">Goal 1</span> <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Pending Slack workflow changes. Define a freeze date — don't let this stay open indefinitely.</div>
     </li>
     <li>
       <div class="task-title">Define quality metrics <span class="goal-tag">Goal 1</span></div>
-      <div class="task-detail">Carry forward — identify 5-7 metrics, map data sources. Due by Apr 14.</div>
+      <div class="task-detail">Was due Apr 14 — confirm new target this sprint.</div>
     </li>
     <li>
-      <div class="task-title">#product-support Slack workflow <span class="goal-tag">Goal 6</span> <span class="goal-tag">Goal 2</span></div>
-      <div class="task-detail">Due by Apr 10. Start with Workflow Builder — even a rough first pass counts.</div>
+      <div class="task-title">Draft pod quality expectations doc <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Was due Apr 14 — confirm new target this sprint.</div>
     </li>
   </ul>
 
@@ -92,17 +113,19 @@
   <div class="coming-soon">
     <h2>Coming Soon</h2>
     <ul>
-      <li><span class="cs-date">Tue Apr 7</span> <span class="cs-item">Native app build testing &amp; App Store deployment</span></li>
-      <li><span class="cs-date">Tue Apr 7</span> <span class="cs-item">Defect Trending Report due</span></li>
-      <li><span class="cs-date">Tue Apr 7</span> <span class="cs-item">Care Team &amp; Product Sync (2:30pm) — demo Slack→JSM P1 workflow</span></li>
-      <li><span class="cs-date">Wed Apr 9</span> <span class="cs-item">First weekly bug "requires review" post to dev channel</span></li>
-      <li><span class="cs-date">Thu Apr 10</span> <span class="cs-item">P1 fire drill (noon)</span></li>
-      <li><span class="cs-date">Thu Apr 10</span> <span class="cs-item">1:1 with VP of Technology (12:30pm)</span></li>
-      <li><span class="cs-date">By Apr 10</span> <span class="cs-item">#product-support Slack workflow live</span></li>
-      <li><span class="cs-date">Mon Apr 13</span> <span class="cs-item">VPAT contractor starts — be available to assist</span></li>
-      <li><span class="cs-date">By Apr 14</span> <span class="cs-item">Quality metrics defined</span></li>
-      <li><span class="cs-date">By Apr 14</span> <span class="cs-item">Pod quality expectations doc drafted</span></li>
+      <li><span class="cs-date">Tue Apr 14</span> <span class="cs-item">Defect Trending Report due</span></li>
+      <li><span class="cs-date">Tue Apr 14</span> <span class="cs-item">Care Team &amp; Product Sync (2:30pm)</span></li>
       <li><span class="cs-date">~Apr 14</span> <span class="cs-item">1:1 with SW Eng Manager (rescheduled from Apr 3)</span></li>
+      <li><span class="cs-date">Wed Apr 16</span> <span class="cs-item">Weekly bug "requires review" post to dev channel</span></li>
+      <li><span class="cs-date">This week</span> <span class="cs-item">#product-support workflow — meeting with Care Team manager</span></li>
+      <li><span class="cs-date">This sprint</span> <span class="cs-item">Sprint 145 project review: MFA, Braze, Minors, Data Deletion, Anthem, JSM features</span></li>
+      <li><span class="cs-date">This sprint</span> <span class="cs-item">Quality metrics defined (date TBD)</span></li>
+      <li><span class="cs-date">This sprint</span> <span class="cs-item">Pod quality expectations doc (date TBD)</span></li>
+      <li><span class="cs-date">Apr 21</span> <span class="cs-item">Care Team &amp; Product Sync — demo Slack→JSM P1 workflow (rescheduled)</span></li>
+      <li><span class="cs-date">May 7</span> <span class="cs-item">First quality metrics report to leadership</span></li>
+      <li><span class="cs-date">May 15</span> <span class="cs-item">CircleCI → GitHub Actions migration begins</span></li>
+      <li><span class="cs-date">May 15</span> <span class="cs-item">First AI-assisted bug resolution sprint</span></li>
+      <li><span class="cs-date">May 31</span> <span class="cs-item">"How We'd Test AI Features Here" one-pager due</span></li>
     </ul>
   </div>
 </body>
