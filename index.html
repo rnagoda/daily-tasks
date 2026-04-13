@@ -37,54 +37,46 @@
 </head>
 <body>
   <h1>Daily Tasks</h1>
-  <div class="date">Monday, April 13, 2026 — Sprint 145 Begins</div>
-  <div class="updated">Last updated: 2026-04-10</div>
+  <div class="date">Monday, April 13, 2026 — Sprint 145 Kickoff</div>
+  <div class="updated">Last updated: 2026-04-13</div>
 
   <div class="goal-focus">
     <div class="goal-focus-title">Today's Goal Focus: Goal 3 — Shift from Execution to Strategy</div>
-    <div class="goal-focus-snippet">New sprint, new contractor, same throughline: get ahead of the work instead of reacting to it. The JSM follow-ups from the fire drill, the project review, the N+1 — all of it is about building systems that run without you having to intervene every time.</div>
+    <div class="goal-focus-snippet">New sprint kickoff. The project review and N+1 today set the tone — there are a lot of compliance-sensitive projects starting this sprint (Minors, Data Deletion, Anthem, MFA warranty). Get ahead of them in planning, not after they ship.</div>
   </div>
   <div class="goals-active">Goals in play today: 1, 3, 6</div>
 
   <h2>Meetings</h2>
   <div class="meeting">
     <div class="meeting-time">Weekly Project Review (first thing)</div>
-    <div class="prep">Sprint 145 kickoff — review tracker, flag new projects (MFA, Braze, Minors, Data Deletion, etc.), align on priorities.</div>
+    <div class="prep">Sprint 145 kickoff — review project tracker. Heavy sprint: MFA warranty, Braze Phase 1+2, Minors, Data Deletion kickoff, Anthem kickoff, Care Team Automation spike. Flag compliance risks.</div>
   </div>
   <div class="meeting">
     <div class="meeting-time">N+1 Meeting (weekly)</div>
-    <div class="prep">Bring quality lens to Sprint 145 priorities. Flag compliance-sensitive projects (Minors, Data Deletion, Anthem).</div>
+    <div class="prep">Bring quality lens to Sprint 145 priorities. Flag: Minors (HIPAA + COPPA), Data Deletion (hard delete vs soft delete, audit trail), Anthem Alternate ID (PHI-adjacent). VPAT contractor starting today.</div>
   </div>
 
   <h2>Today's Focus</h2>
   <ul>
     <li>
       <div class="task-title">VPAT contractor starts — be available <span class="goal-tag">Goal 1</span></div>
-      <div class="task-detail">Contractor begins web and iOS accessibility work today. Scope TBD from Apr 2 meeting. Be reachable for questions and coordination.</div>
+      <div class="task-detail">Contractor begins web and iOS accessibility work today. Be reachable for questions and coordination. Scope was set in Apr 2 meeting.</div>
     </li>
     <li>
       <div class="task-title">Turn off JSM alert for P1 recovery messages <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Fire drill follow-up. Recovery message alerts in JSM are noisy — disable them.</div>
+      <div class="task-detail">Fire drill follow-up. Recovery message alerts are noisy — disable them.</div>
     </li>
     <li>
-      <div class="task-title">Close #technology-support-alerting, route to #technology-incidents <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Consolidate alert channels — archive #technology-support-alerting and redirect those messages to #technology-incidents.</div>
+      <div class="task-title">Close #technology-support-alerting → route to #technology-incidents <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Archive the old alerting channel and redirect to #technology-incidents.</div>
     </li>
     <li>
       <div class="task-title">P1 incidents: investigate channel inclusion in ticket <span class="goal-tag">Goal 3</span> <span class="goal-tag">Goal 6</span></div>
-      <div class="task-detail">Evaluate whether the incident Slack channel should be included in the JSM ticket, or whether the separate channel approach should be dropped entirely.</div>
+      <div class="task-detail">Should the incident Slack channel be included in the JSM ticket, or drop the separate channel approach entirely?</div>
     </li>
     <li>
       <div class="task-title">Investigate new JSM features <span class="goal-tag">Goal 3</span></div>
       <div class="task-detail">Review what's new in JSM that could streamline QA and incident workflows.</div>
-    </li>
-    <li>
-      <div class="task-title">PACT / Agentic QE Fleet — Week 1 setup <span class="goal-tag">Goal 2</span> <span class="goal-tag">Goal 5</span></div>
-      <div class="task-detail">Path A (Debugger's Route) selected. Steps: verify Node.js 18+, run <code>npm install -g agentic-qe &amp;&amp; aqe init --auto</code>, take PACT assessment, create week1-baseline.md documenting P1 MTTR as the #1 pain point. No agent experiments yet — first experiment next week after E2E audit.</div>
-    </li>
-    <li>
-      <div class="task-title">Q1 accomplishments backfill <span class="carry-tag">Carrying 3wks</span></div>
-      <div class="task-detail">Review Q1 work and document in accomplishments.md. Three weeks on the list — give this a hard slot today.</div>
     </li>
   </ul>
 
@@ -92,30 +84,46 @@
   <ul>
     <li>
       <div class="task-title">#product-support Slack workflow <span class="goal-tag">Goal 6</span> <span class="goal-tag">Goal 2</span></div>
-      <div class="task-detail">Meeting with Care Team manager this week to continue. Keep momentum.</div>
+      <div class="task-detail">Meeting with Care Team manager this week to continue.</div>
     </li>
     <li>
-      <div class="task-title">P1 alert punchlist <span class="goal-tag">Goal 1</span> <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Pending Slack workflow changes. Define a freeze date — don't let this stay open indefinitely.</div>
+      <div class="task-title">P1 alert punchlist — finalize <span class="goal-tag">Goal 1</span> <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Blocked on Slack workflow changes. Set a freeze date this sprint and close it out.</div>
     </li>
     <li>
-      <div class="task-title">Define quality metrics <span class="goal-tag">Goal 1</span></div>
-      <div class="task-detail">Was due Apr 14 — confirm new target this sprint.</div>
+      <div class="task-title">Define quality metrics <span class="goal-tag">Goal 1</span> <span class="carry-tag">Carried</span></div>
+      <div class="task-detail">Identify 5-7 metrics, map data sources. Target: this sprint.</div>
     </li>
     <li>
-      <div class="task-title">Draft pod quality expectations doc <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Was due Apr 14 — confirm new target this sprint.</div>
+      <div class="task-title">Draft pod quality expectations doc <span class="goal-tag">Goal 3</span> <span class="carry-tag">Carried</span></div>
+      <div class="task-detail">One page: what pods own, what they report, how. Target: this sprint.</div>
+    </li>
+    <li>
+      <div class="task-title">PACT / Agentic QE — Week 1 setup <span class="goal-tag">Goal 2</span> <span class="goal-tag">Goal 5</span></div>
+      <div class="task-detail">Path A selected. Steps: verify Node.js 18+, install CLI, take PACT assessment, create week1-baseline.md. No agent experiments yet.</div>
+    </li>
+    <li>
+      <div class="task-title">Q1 accomplishments backfill <span class="carry-tag">Carrying 3wks</span></div>
+      <div class="task-detail">Review Q1 work and document in accomplishments.md. This sprint — find a slot.</div>
+    </li>
+    <li>
+      <div class="task-title">E2E suite audit <span class="goal-tag">Goal 2</span></div>
+      <div class="task-detail">Document test count, coverage, flaky tests, CircleCI config, pass rate, gaps. Due Apr 21 per 90-day plan.</div>
+    </li>
+    <li>
+      <div class="task-title">Document product support workflow <span class="goal-tag">Goal 6</span></div>
+      <div class="task-detail">Map intake-to-resolution, identify bottlenecks. Due Apr 21 per 90-day plan.</div>
     </li>
   </ul>
 
   <h2>Learning</h2>
   <div class="learning">
     <div class="learning-label">Vanderbilt — Prompt Engineering for ChatGPT (~60%)</div>
-    <div class="learning-detail">Highest priority course. Keep momentum.</div>
+    <div class="learning-detail">Block 30 min this week to push past 60%. AI upskilling is a manager priority.</div>
   </div>
   <div class="learning">
     <div class="learning-label">Azure Fundamentals (AZ-900)</div>
-    <div class="learning-detail">Microsoft Learn modules — good change-of-pace work.</div>
+    <div class="learning-detail">Microsoft Learn modules — good change-of-pace work when you need a break.</div>
   </div>
 
   <div class="coming-soon">
@@ -123,16 +131,17 @@
     <ul>
       <li><span class="cs-date">Tue Apr 14</span> <span class="cs-item">Defect Trending Report due</span></li>
       <li><span class="cs-date">Tue Apr 14</span> <span class="cs-item">Care Team &amp; Product Sync (2:30pm)</span></li>
+      <li><span class="cs-date">Tue Apr 14</span> <span class="cs-item">N+1 Meeting</span></li>
+      <li><span class="cs-date">~Apr 14</span> <span class="cs-item">1:1 with VP of Technology (biweekly — confirm date)</span></li>
       <li><span class="cs-date">~Apr 14</span> <span class="cs-item">1:1 with SW Eng Manager (rescheduled from Apr 3)</span></li>
-      <li><span class="cs-date">Wed Apr 16</span> <span class="cs-item">Weekly bug "requires review" post to dev channel</span></li>
-      <li><span class="cs-date">This week</span> <span class="cs-item">#product-support workflow — meeting with Care Team manager</span></li>
-      <li><span class="cs-date">This sprint</span> <span class="cs-item">Sprint 145 project review: MFA, Braze, Minors, Data Deletion, Anthem, JSM features</span></li>
-      <li><span class="cs-date">This sprint</span> <span class="cs-item">Quality metrics defined (date TBD)</span></li>
-      <li><span class="cs-date">This sprint</span> <span class="cs-item">Pod quality expectations doc (date TBD)</span></li>
-      <li><span class="cs-date">Apr 21</span> <span class="cs-item">Care Team &amp; Product Sync — demo Slack→JSM P1 workflow (rescheduled)</span></li>
+      <li><span class="cs-date">Thu Apr 16</span> <span class="cs-item">QA/Product Bug Triage (biweekly, 10am)</span></li>
+      <li><span class="cs-date">Wed Apr 15</span> <span class="cs-item">Weekly bug "requires review" post to dev channel</span></li>
+      <li><span class="cs-date">Fri Apr 17</span> <span class="cs-item">Bug Refinement (biweekly)</span></li>
+      <li><span class="cs-date">Apr 21</span> <span class="cs-item">E2E suite audit due (90-day plan)</span></li>
+      <li><span class="cs-date">Apr 21</span> <span class="cs-item">Product support workflow doc due (90-day plan)</span></li>
+      <li><span class="cs-date">Apr 30</span> <span class="cs-item">Quality strategy roadmap draft due</span></li>
       <li><span class="cs-date">May 7</span> <span class="cs-item">First quality metrics report to leadership</span></li>
       <li><span class="cs-date">May 15</span> <span class="cs-item">CircleCI → GitHub Actions migration begins</span></li>
-      <li><span class="cs-date">May 15</span> <span class="cs-item">First AI-assisted bug resolution sprint</span></li>
       <li><span class="cs-date">May 31</span> <span class="cs-item">"How We'd Test AI Features Here" one-pager due</span></li>
     </ul>
   </div>
