@@ -22,7 +22,6 @@
     .meeting { background: #2a2a3e; padding: 8px 12px; border-radius: 6px; margin-bottom: 6px; }
     .meeting-time { color: #f0a050; font-weight: 600; font-size: 0.85rem; }
     .prep { color: #aaa; font-size: 0.85rem; margin-top: 2px; }
-    .no-meetings { color: #666; font-style: italic; }
     .goal-focus { background: #1e2a3e; border-left: 3px solid #8ab4f8; padding: 12px 14px; border-radius: 0 6px 6px 0; margin-bottom: 8px; }
     .goal-focus-title { color: #8ab4f8; font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; }
     .goal-focus-snippet { color: #bbb; font-size: 0.85rem; line-height: 1.4; font-style: italic; }
@@ -40,106 +39,109 @@
 </head>
 <body>
   <h1>Daily Tasks</h1>
-  <div class="date">Wednesday, April 15, 2026 — Sprint 145, Day 3</div>
-  <div class="updated">Last updated: 2026-04-15</div>
+  <div class="date">Wednesday, April 22, 2026 — Sprint 145, Day 8 (ends Fri)</div>
+  <div class="updated">Last updated: 2026-04-22</div>
 
   <div class="goal-focus">
-    <div class="goal-focus-title">Raquel meeting outcome: training program + self-service docs</div>
-    <div class="goal-focus-snippet">Strong outcome — recurring training sessions start Fri (Raquel co-hosts kickoff, then solo), plus improved troubleshooting docs in Confluence. Duplicate patient record guide is next up. Rest of today: close TEC-8126 and keep TEC-8145 moving.</div>
+    <div class="goal-focus-title">Sprint 145 close-out: 2 days left</div>
+    <div class="goal-focus-snippet">Heavy product support traffic has eaten strategic capacity this sprint. Focus today: make progress on TEC-8126, prep for tomorrow's VP goal review, and protect time for quality metrics work. Don't start new things — close what you can.</div>
   </div>
-  <div class="goals-active">Goals in play today: 3, 6, 2, 4</div>
+  <div class="goals-active">Goals in play today: 1, 3</div>
+
+  <h2>Meetings</h2>
+  <div class="meeting">
+    <div class="meeting-time">No scheduled meetings today</div>
+    <div class="prep">Use the space. This is your best window for focused work before tomorrow's VP meeting and Friday's training kickoff.</div>
+  </div>
 
   <h2>Today's Focus</h2>
   <ul>
     <li>
-      <div class="task-title">Write up Raquel meeting takeaways <span class="goal-tag">Goal 4</span> <span class="goal-tag">Goal 6</span></div>
-      <div class="task-detail">While fresh. Capture: agreed outcomes, Fri kickoff scope, training cadence thoughts, troubleshooting doc priorities. This feeds Fri 9am SW Eng Manager 1:1.</div>
+      <div class="task-title">TEC-8126 fire drill cleanup — advance the open items <span class="ticket-tag">TEC-8126</span> <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Three items still open: (1) archive #technology-support-alerting → #technology-incidents, (2) incident channel inclusion in JSM ticket decision, (3) P1 punchlist finalization. Resolve what you can, document blockers on the rest.</div>
+    </li>
+    <li>
+      <div class="task-title">VP goal review prep — tomorrow <span class="goal-tag">Goal 1</span> <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Goals presented Apr 16, review tomorrow. Be ready with honest status on each Apr 30 target: aging analysis (in progress), AI-assisted resolution (TEC-8145 in progress), Care Team training (kickoff Fri), quality metrics (in progress). Frame capacity constraints as data, not excuses.</div>
+    </li>
+    <li>
+      <div class="task-title">Quality metrics — continue progress <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 1</span> <span class="carry-tag">Carried</span></div>
+      <div class="task-detail">Apr 30 checkback with VP. Get metrics defined and data sources mapped — even a partial list is better than nothing to show.</div>
     </li>
     <li>
       <div class="task-title">Weekly bug "requires review" post to dev channel <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Scan for untriaged bugs, post to dev channel for async review.</div>
-    </li>
-    <li>
-      <div class="task-title">Close out TEC-8126 fire drill cleanup <span class="ticket-tag">TEC-8126</span> <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Three items left under one ticket — block focused time to finish all of them: (1) archive #technology-support-alerting → #technology-incidents, (2) decide on incident channel inclusion in JSM ticket, (3) finalize P1 punchlist. Closing the whole ticket this week is a clean win.</div>
+      <div class="task-detail">Recurring Wednesday task.</div>
     </li>
   </ul>
 
   <h2>Also In Flight This Sprint</h2>
   <ul>
     <li>
-      <div class="task-title">Care Team training — kickoff session Fri <span class="goal-tag">Goal 4</span> <span class="goal-tag">Goal 6</span></div>
-      <div class="task-detail">Co-hosted with Raquel. Overview/scoping format — determine cadence, topics, future format. Light prep needed; existing material available as backup.</div>
-    </li>
-    <li>
-      <div class="task-title">Duplicate patient record troubleshooting guide <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 6</span> <span class="goal-tag">Goal 2</span></div>
-      <div class="task-detail">Next Confluence doc in the troubleshooting library (linked from PS Slack canvas). Helps care reps self-serve before escalating.</div>
-    </li>
-    <li>
-      <div class="task-title">Continue TEC-8145 Copilot bug tracking tooling <span class="ticket-tag">TEC-8145</span> <span class="goal-tag">Goal 2</span> <span class="goal-tag">Goal 5</span></div>
-      <div class="task-detail">Good momentum yesterday — keep building. One experiment per sprint (Goal 5) — this is it.</div>
-    </li>
-    <li>
-      <div class="task-title">Investigate new JSM features <span class="ticket-tag">TEC-8127</span> <span class="goal-tag">Goal 3</span></div>
-      <div class="task-detail">Time-box to 1 hour. Could slot in between meetings.</div>
+      <div class="task-title">GitHub Copilot — bug tracking tooling <span class="ticket-tag">TEC-8145</span> <span class="goal-tag">Goal 2</span> <span class="goal-tag">Goal 5</span></div>
+      <div class="task-detail">Feeds the AI-assisted resolution goal (Apr 30 checkback).</div>
     </li>
     <li>
       <div class="task-title">VPAT contractor support <span class="ticket-tag">TEC-7507</span> <span class="goal-tag">Goal 1</span></div>
-      <div class="task-detail">Be available as needed. Contractor is handling the work.</div>
+      <div class="task-detail">Be available as needed. End of April target for Phase 1.</div>
     </li>
     <li>
-      <div class="task-title">Request Source improvements — in discussion <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 1</span></div>
-      <div class="task-detail">N+1 didn't greenlight yet but it's in discussion. Hold on drafting the guide until there's more clarity. Revisit at Friday's SW Eng Manager 1:1.</div>
+      <div class="task-title">Care Team training — kickoff Fri morning <span class="goal-tag">Goal 4</span> <span class="goal-tag">Goal 6</span></div>
+      <div class="task-detail">Co-hosted with Raquel. Determine cadence, topics, format. Light prep needed.</div>
     </li>
     <li>
-      <div class="task-title">Define quality metrics <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 1</span> <span class="carry-tag">Carried</span></div>
-      <div class="task-detail">Target: Apr 21. Defer to Thu/Fri when Raquel meeting is behind you.</div>
+      <div class="task-title">Duplicate patient record troubleshooting guide <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 6</span> <span class="goal-tag">Goal 2</span></div>
+      <div class="task-detail">Next Confluence doc. Helps care reps self-serve.</div>
     </li>
     <li>
-      <div class="task-title">Draft pod quality expectations doc <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 3</span> <span class="carry-tag">Carried</span></div>
-      <div class="task-detail">Bring concept to Fri SW Eng Manager 1:1 for early input before writing.</div>
+      <div class="task-title">Q1 accomplishments backfill <span class="carry-tag">Carrying 5wks</span></div>
+      <div class="task-detail">This is becoming a permanent carry. Find a slot or make a decision to drop it.</div>
     </li>
+  </ul>
+
+  <h2>Carrying to Sprint 146</h2>
+  <ul>
     <li>
       <div class="task-title">E2E suite audit <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 2</span></div>
-      <div class="task-detail">Due Apr 21.</div>
+      <div class="task-detail">Deferred. Originally due Apr 21. Blocks CI migration and PACT framework.</div>
     </li>
     <li>
-      <div class="task-title">Document product support workflow <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 6</span></div>
-      <div class="task-detail">Due Apr 21. Today's Raquel meeting directly feeds this.</div>
+      <div class="task-title">Investigate new JSM features <span class="ticket-tag">TEC-8127</span> <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Pushed to next sprint.</div>
     </li>
     <li>
-      <div class="task-title">PACT / Agentic QE — Week 1 setup <span class="needs-ticket-tag">consider ticket</span> <span class="goal-tag">Goal 2</span> <span class="goal-tag">Goal 5</span></div>
-      <div class="task-detail">Distinct from TEC-8145. Verify Node.js 18+, install CLI, take PACT assessment, create week1-baseline.md.</div>
+      <div class="task-title">Request Source improvements <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 1</span></div>
+      <div class="task-detail">Still in discussion. Guide deferred.</div>
     </li>
     <li>
-      <div class="task-title">Q1 accomplishments backfill <span class="carry-tag">Carrying 3wks</span></div>
-      <div class="task-detail">Don't let it hit Sprint 146.</div>
+      <div class="task-title">Pod quality expectations doc <span class="needs-ticket-tag">needs ticket</span> <span class="goal-tag">Goal 3</span></div>
+      <div class="task-detail">Deferred — define metrics first, then define what pods owe you.</div>
+    </li>
+    <li>
+      <div class="task-title">PACT / Agentic QE setup <span class="needs-ticket-tag">consider ticket</span> <span class="goal-tag">Goal 2</span> <span class="goal-tag">Goal 5</span></div>
+      <div class="task-detail">Not started this sprint.</div>
     </li>
   </ul>
 
   <h2>Learning</h2>
   <div class="learning">
     <div class="learning-label">Vanderbilt — Prompt Engineering for ChatGPT (~60%)</div>
-    <div class="learning-detail">Block 30 min this week to push past 60%.</div>
+    <div class="learning-detail">No movement this sprint. Block 30 min before end of week if possible.</div>
   </div>
   <div class="learning">
     <div class="learning-label">Azure Fundamentals (AZ-900)</div>
-    <div class="learning-detail">Microsoft Learn modules — change-of-pace work.</div>
+    <div class="learning-detail">Change-of-pace work when you need a break from the grind.</div>
   </div>
 
   <div class="coming-soon">
     <h2>Coming Soon</h2>
     <ul>
-      <li><span class="cs-date">Thu Apr 16</span> <span class="cs-item">QA/Product Bug Triage (biweekly, 10am)</span></li>
-      <li><span class="cs-date">Thu Apr 16</span> <span class="cs-item">1:1 with VP of Technology (12:30pm)</span></li>
-      <li><span class="cs-date">Fri Apr 17</span> <span class="cs-item">1:1 with SW Eng Manager (9am) — Care Team/Eng interface follow-up</span></li>
-      <li><span class="cs-date">Fri Apr 17</span> <span class="cs-item">Care Team training — kickoff session (co-host with Raquel)</span></li>
-      <li><span class="cs-date">Fri Apr 17</span> <span class="cs-item">Bug Refinement (biweekly)</span></li>
-      <li><span class="cs-date">Tue Apr 21</span> <span class="cs-item">Next week's native app testing &amp; release [TEC-8123]</span></li>
-      <li><span class="cs-date">Tue Apr 21</span> <span class="cs-item">Care Team &amp; Product Sync — demo Slack→JSM P1 workflow</span></li>
-      <li><span class="cs-date">Apr 21</span> <span class="cs-item">E2E suite audit due (90-day plan)</span></li>
-      <li><span class="cs-date">Apr 21</span> <span class="cs-item">Product support workflow doc due (90-day plan)</span></li>
-      <li><span class="cs-date">Apr 30</span> <span class="cs-item">Quality strategy roadmap draft due</span></li>
+      <li><span class="cs-date">Thu Apr 23</span> <span class="cs-item">1:1 with VP of Technology — goal review</span></li>
+      <li><span class="cs-date">Fri Apr 24</span> <span class="cs-item">Care Team training kickoff (morning, co-hosted with Raquel)</span></li>
+      <li><span class="cs-date">Fri Apr 24</span> <span class="cs-item">Sprint 145 close</span></li>
+      <li><span class="cs-date">Apr 27</span> <span class="cs-item">Sprint 146 begins</span></li>
+      <li><span class="cs-date">Apr 30</span> <span class="cs-item">VP goal checkback: aging analysis, AI-assisted resolution, Care Team training, quality metrics</span></li>
+      <li><span class="cs-date">Apr 30</span> <span class="cs-item">Quality strategy roadmap draft due (90-day plan)</span></li>
+      <li><span class="cs-date">Apr 30</span> <span class="cs-item">Accessibility Phase 1 target end date</span></li>
       <li><span class="cs-date">May 7</span> <span class="cs-item">First quality metrics report to leadership</span></li>
       <li><span class="cs-date">May 15</span> <span class="cs-item">CircleCI → GitHub Actions migration begins</span></li>
       <li><span class="cs-date">May 31</span> <span class="cs-item">"How We'd Test AI Features Here" one-pager due</span></li>
@@ -147,7 +149,7 @@
   </div>
 
   <div class="legend">
-    Legend: <span class="ticket-tag">TEC-####</span> = ticketed work · <span class="needs-ticket-tag">needs ticket</span> = should be created · <span class="carry-tag">Carried</span> = from prior sprint · <span class="goal-tag">Goal #</span> = aligns to QA goal
+    Legend: <span class="ticket-tag">TEC-####</span> = ticketed · <span class="needs-ticket-tag">needs ticket</span> = should be created · <span class="carry-tag">Carried</span> = from prior sprint · <span class="goal-tag">Goal #</span> = goal alignment
   </div>
 </body>
 </html>
